@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = 1,
+            b = 1,
+            c, d;
+        c = ++a;
+        let value = "ответ равным: ",
+            valueResult = " в результате";
+
+        alert(" пример #1 " + value + c + valueResult + "- инкриминация происходит до присвоения");
+
+        d = b++;
+        alert(" пример #2 " + value + d + valueResult + "-  инкриминация происходит после присвоения");
+
+        c = 2 + ++a;
+
+        alert(" пример #3 " + value + c + valueResult + "- инкриминация происходит до присвоения и суммируется");
+
+        d = 2 + b++;
+
+        alert(" пример #4 " + value + d + valueResult + "-в примере #2 в переменной b  инкриминация происходит после присвоения");
+
+        alert(value + a + valueResult + " - в примерах #1 и #3 значение a инкрименируется");
+        alert(value + b + valueResult + " - в примерах #2 и #4 значение b инкрименируется");
+    </script>
+
+
+</body>
+
+</html>
